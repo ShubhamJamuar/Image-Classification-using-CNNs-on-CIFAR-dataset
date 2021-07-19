@@ -43,8 +43,8 @@ Output Layer
 To Use:<br>
 1.Clone the GIT repository.<br>
 2.Run <i>pip install requirements.txt</i> <br>
-2.5.Change the working directory Command in <i>server.py</i> "os.chdir(r"C:\Users\LENOVO\Desktop\sample_project_1\Take It Out")" to os.chdir({YOUR WORKING DIRECTORY}) 
-3.Run <i>server.py</i> on Terminal
+2.5.Change the working directory Command in <i>server.py</i> "os.chdir(r"C:\Users\LENOVO\Desktop\sample_project_1\Take It Out")" to os.chdir({YOUR WORKING DIRECTORY}) .<br> 
+3.Run <i>server.py</i> on Terminal.<br>
 4.Open <i>http://127.0.0.1:5000/index</i>
 
 
