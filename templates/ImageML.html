@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+		rel="stylesheet" type="text/css" />
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+	<meta charset=utf-8 />
+
+	<script src="{{ url_for('static', filename='upload.js') }}"></script>
+
+	<style>
+		article,
+		aside,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Upload an Image</h1>
+				<hr>
+	<form action="{{ url_for('upload_image')}}" method="POST" enctype="multipart/form-data">
+	<div class="form-group">
+	<label>Select image</label>
+	<div class="custom-file">
+		<input type="file" class="custom-file-input" name="image" id="image">
+	</div>	
+	</div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+	</form>
+</div>
+</div>
+<br>
+{{ prediction }}
+</div>
+</body>
+
+</html>
