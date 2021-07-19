@@ -1,8 +1,10 @@
 # Image-Classification-using-CNNs-on-CIFAR-dataset
-Image Classification Model Built on a subset of CIFAR-10 Dataset for Classification of various images of bird,aeroplane and car.
-The Sequential Model takes an image with input Size (32,32,3) and produces a output vector with 3 classes.
-Model has been built from scratch with information as below.
-Model: "sequential"
+Image Classification Model Built on a subset of CIFAR-10 Dataset for Classification of various images.<br>
+The Sequential Model takes an image with input Size (32,32,3) and produces a output vector with 3 classes.<br>
+1.Aeroplane<br>
+2.Car<br>
+3.Bird<br>
+Model architecture is shown below.
 
 conv2d (Conv2D)              (None, 32, 32, 32)        896       
 _________________________________________________________________
@@ -36,5 +38,12 @@ dropout_2 (Dropout)          (None, 2, 2, 128)         0
 _________________________________________________________________
 flatten (Flatten)            (None, 512)               0         
 _________________________________________________________________
-dense (Dense)                (None, 3)                 1539      <- OUTPUT LAYER
-=================================================================
+Output Layer
+
+To Use:<br>
+1.Clone the GIT repository.<br>
+2.Run <i>pip install requirements.txt</i> <br>
+3.Run <i>server.py</i> on Terminal
+4.Open <i>http://127.0.0.1:5000/index</i>
+
+
