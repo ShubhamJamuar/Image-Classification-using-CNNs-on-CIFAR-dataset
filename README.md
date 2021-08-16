@@ -4,7 +4,16 @@ The Sequential Model takes an image with input Size (32,32,3) and produces a out
 1.Aeroplane<br>
 2.Car<br>
 3.Bird<br>
-Model architecture is shown below.
+
+To Use:<br>
+1.Download the GIT repository as Zip and Extract.<br>
+2.Run <i>pip install requirements.txt</i> <br>
+2.5.Change the working directory Command in <i>server.py</i> "os.chdir(r"C:\Users\LENOVO\Desktop\sample_project_1\Take It Out")" to os.chdir({YOUR WORKING DIRECTORY}) .<br> 
+3.Run <i>server.py</i> on Terminal.<br>
+4.Open <i>http://127.0.0.1:5000/index</i>
+
+Information about the custom model:<br>
+Model architecture:<br>
 
 conv2d (Conv2D)              (None, 32, 32, 32)        896       
 _________________________________________________________________
@@ -39,12 +48,5 @@ _________________________________________________________________
 flatten (Flatten)            (None, 512)               0         
 _________________________________________________________________
 Output Layer
-
-To Use:<br>
-1.Download the GIT repository as Zip and Extract.<br>
-2.Run <i>pip install requirements.txt</i> <br>
-2.5.Change the working directory Command in <i>server.py</i> "os.chdir(r"C:\Users\LENOVO\Desktop\sample_project_1\Take It Out")" to os.chdir({YOUR WORKING DIRECTORY}) .<br> 
-3.Run <i>server.py</i> on Terminal.<br>
-4.Open <i>http://127.0.0.1:5000/index</i>
 
 
